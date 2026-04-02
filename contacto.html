@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- METADATOS PRINCIPALES -->
+    <title>Contacto | Portfolio - Roberto García</title>
+    <meta name="description" content="Contacto con el desarrollador">
+    
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <div id="site-header"></div>
+    <main id="main-content">
+        <section class="project-hero">
+            <h1>Contacto</h1>
+            <p>Déjame saber cómo podemos trabajar juntos</p>
+        </section>
+
+        <div class="contacto-container">
+            
+            <!-- Email -->
+            <section class="contact-card">
+                <div class="contact-icon">📧</div>
+                <div class="contact-content">
+                    <h2>Correo Electrónico</h2>
+                    <p>La forma más rápida de contactarme</p>
+                    <a href="mailto:rodevto0@gmail.com" class="contact-link">rodevto0@gmail.com</a>
+                </div>
+            </section>
+
+            <!-- LinkedIn -->
+            <section class="contact-card">
+                <div class="contact-icon">💼</div>
+                <div class="contact-content">
+                    <h2>LinkedIn</h2>
+                    <p>Conecta conmigo profesionalmente</p>
+                    <a href="www.linkedin.com/in/roberto-garcía-toquero-3a46722b2" target="_blank" rel="noopener noreferrer" class="contact-link">Visita mi perfil</a>
+                </div>
+            </section>
+
+            <!-- GitHub -->
+            <section class="contact-card">
+                <div class="contact-icon">💻</div>
+                <div class="contact-content">
+                    <h2>GitHub</h2>
+                    <p>Revisa mis proyectos y código</p>
+                    <a href="https://github.com/Toquero21" target="_blank" rel="noopener noreferrer" class="contact-link">Ver repositorios</a>
+                </div>
+            </section>
+
+            <!-- Formulario -->
+            <section class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-content">
+                    <h2>Formulario de Contacto</h2>
+                    <p>Envíame un mensaje directo</p>
+                    <button class="contact-link" id="form-toggle">Abrir formulario</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Formulario Modal -->
+        <div class="form-modal" id="contact-form-modal">
+            <div class="form-container">
+                <button class="close-btn">&times;</button>
+                <h2>Envíame un mensaje</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="section-footer">
+        <a href="index.html" class="btn btn-outline">← Volver al inicio</a>
+    </div>
+
+    <script src="js/header-loader.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</body>
+</html>

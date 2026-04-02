@@ -1,0 +1,128 @@
+
+/* Ajuste del padding para header fijo */
+#main-content {
+    padding-top: 12rem !important;
+    padding-bottom: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título principal */
+#main-content h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1.5rem;
+    color: var(--fg);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Subtítulo */
+.page-subtitle {
+    font-size: 1.1rem;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.page-subtitle strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Badges de aprendizaje */
+.learning-badge {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.learning-badge span {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent);
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    transition: all 0.2s ease;
+}
+
+.learning-badge span:hover {
+    background: rgba(56, 189, 248, 0.15);
+    transform: translateY(-2px);
+}
+
+.lab-coming-soon {
+    margin-top: 4rem;
+    padding: 2.5rem;
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: 16px;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    text-align: center;
+}
+
+.lab-coming-soon h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.lab-coming-soon ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: left;
+    max-width: 500px;
+    margin: 1.5rem auto;
+}
+
+.lab-coming-soon li {
+    padding: 0.5rem 0;
+    color: var(--muted);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.lab-coming-soon a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+        
+    .page-subtitle {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .learning-badge {
+        gap: 0.8rem;
+    }
+    
+    .learning-badge span {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+  
+    .learning-badge {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .learning-badge span {
+        width: 100%;
+        max-width: 220px;
+        text-align: center;
+    }
+}

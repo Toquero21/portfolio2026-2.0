@@ -1,0 +1,74 @@
+/* ============================ HEADER ============================ */
+#site-header {
+  background: rgba(5, 8, 22, 0.98);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+
+} /* ============================ TÍTULO DEL SITIO ============================ */
+.site_title {
+  margin: 1;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--fg);
+  text-align: center;
+}
+.site_title span {
+  color: var(--accent);
+  font-weight: 300;
+} /* ============================ NAVEGACIÓN ============================ */
+#site-header nav {
+  width: 100%;
+  max-width: 900px;
+}
+#site-header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+#site-header nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+} /* Hover */
+#site-header nav a:hover {
+  color: var(--accent);
+} /* Subrayado animado */
+#site-header nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+#site-header nav a:hover::after {
+  width: 100%;
+} /* Página activa */
+#site-header nav a[aria-current="page"] {
+  color: var(--accent);
+}
+#site-header nav a[aria-current="page"]::after {
+  width: 100%;
+}

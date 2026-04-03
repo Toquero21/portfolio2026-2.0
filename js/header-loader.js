@@ -1,6 +1,6 @@
     const header = document.getElementById("site-header");
 
-    fetch('/partials/header.html')
+    fetch('./partials/header.html')
     .then(response => response.text())
     .then(html => {
         header.innerHTML = html;
@@ -55,7 +55,7 @@
     // cargar footer en #site-footer
     const footerContainer = document.getElementById('site-footer');
     if (footerContainer) {
-        fetch('/partials/footer.html')
+        fetch('./partials/footer.html')
         .then(r => r.text())
         .then(html => {
             footerContainer.innerHTML = html;
